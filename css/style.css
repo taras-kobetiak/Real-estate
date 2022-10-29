@@ -107,8 +107,8 @@ body {
 
 /*================================================*/
 [class*=__container] {
-  max-width: 1170px;
   margin: 0 auto;
+  max-width: 1170px;
 }
 
 /*================================================*/
@@ -278,9 +278,18 @@ body {
   position: relative;
   display: flex;
   margin-right: -188px;
-  background: #FFFFFF url("../../img/icons/Vector.png") 33px 32px no-repeat;
   box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
   z-index: 3;
+}
+
+.form-main-block__icon {
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  transform: translate(0, -50%);
+}
+.form-main-block__icon img {
+  max-width: 32px;
 }
 
 .form-main-block__input {
@@ -411,6 +420,9 @@ body {
   }
   .form-main-block {
     display: block;
+  }
+  .form-main-block__icon {
+    display: none;
   }
   .form-main-block__input::placeholder {
     opacity: 0;
